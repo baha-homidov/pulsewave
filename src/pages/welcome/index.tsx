@@ -25,7 +25,7 @@ const UserData: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    router.push("/main")
     console.log(formData);
   };
 

@@ -1,0 +1,90 @@
+/* heartRate styles */
+.heartRate {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.content {
+  box-shadow: 0 20px 50px 0 #174bbb38;
+  border-radius: 4px;
+
+  display: flex;
+  gap: 40px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 40px 20px 40px;
+}
+
+.heartContainer {
+  position: relative;
+
+}
+
+.pulseRate {
+  width: 40px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 20px);
+}
+
+.wrapper {
+  left: 0px;
+  transform: scale(1);
+
+  animation: pulse 1s infinite;
+}
+
+.pulsingheart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.pulsingheart:before,
+.pulsingheart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #aa0000;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  animation: pulsecolor 1s infinite;
+}
+
+.pulsingheart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+  animation: pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+  10% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulsecolor {
+  10% {
+    background: #dd0000;
+  }
+}
+/*                   */
