@@ -1,0 +1,39 @@
+/* heartRate styles */
+.rawData {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.content {
+  box-shadow: 0 20px 50px 0 #174bbb38;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 40px 20px 40px;
+  font-weight: 900;
+
+  list-style-type: none; /* Remove the default list-style-type */
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.placeholder::before {
+  content: "•"; /* Use a bullet character for the marker */
+  font-size: 30px; /* Set the font size for the bullet points (adjust as needed) */
+  margin-right: 4px; /* Add spacing between the bullet point and text */
+}

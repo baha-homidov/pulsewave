@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: "STXihei", sans-serif; /* Use the custom font */
+  font-family: "STXihei", "Courier New", sans-serif; /* Use the custom font */
 
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
