@@ -1,8 +1,10 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import styles from "@/styles/Index.module.css";
-
+import { useRouter } from "next/router";
 const MainLogin: React.FC = () => {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -20,12 +22,12 @@ const MainLogin: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission here
+    router.push("/welcome");
     console.log(formData);
   };
 
   return (
-    <form className={styles.mainLoginComponent} onSubmit={handleSubmit}>
+    <form className={styles.inputForm} onSubmit={handleSubmit}>
       <div>
         <input
           type="text"

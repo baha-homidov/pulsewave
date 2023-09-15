@@ -1,7 +1,6 @@
 /* index page layout */
 .homePageComponent {
   min-height: 100vh;
-
   padding-top: 15vh;
   display: flex;
   flex-direction: column;
@@ -67,14 +66,14 @@
 
 /* mainLogin components styles */
 
-.mainLoginComponent {
+.inputForm {
   width: 35%;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.mainLoginComponent input {
+.inputForm input {
   border-radius: 5px;
   width: 100%;
   height: 56px;
@@ -86,10 +85,10 @@
   transition: 0.2s ease;
 }
 
-.mainLoginComponent div {
+.inputForm div {
   position: relative;
 }
-.mainLoginComponent div span {
+.inputForm div span {
   pointer-events: none;
   color: #657580;
   position: absolute;
@@ -99,27 +98,27 @@
   font-size: 1.2em;
   transition: 0.2s ease;
 }
-.mainLoginComponent input:focus {
+.inputForm input:focus {
   border: 1px solid #154cbb;
 }
 
-.mainLoginComponent input:focus + span,
-.mainLoginComponent input.submitted span {
+.inputForm input:focus + span,
+.inputForm input.submitted span {
   color: #154cbb;
 }
 
-.mainLoginComponent input:not(:placeholder-shown) + span,
-.mainLoginComponent input:focus + span {
+.inputForm input:not(:placeholder-shown) + span,
+.inputForm input:focus + span {
   top: 10px;
   left: 7px;
   font-size: 0.8rem;
 }
 
-.mainLoginComponent.submitted span {
+.inputForm.submitted span {
   color: #657580;
 }
 
-.mainLoginComponent button {
+.inputForm button {
   font-size: 1.1em;
   font-weight: bold;
   color: white;
@@ -132,3 +131,46 @@
 }
 
 /*********************************/
+.userDataComponent {
+  min-height: 100vh;
+  padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.userDataComponent .title {
+  text-align: center;
+  font-size: 3rem;
+
+  font-weight: 900;
+}
+
+.userDataComponent > * {
+  width: max(70vw, 750px);
+  max-width: 1000px;
+}
+
+.userDataComponent form {
+  width: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 30px;
+}
+
+.userDataComponent form input {
+  width: 250px;
+}
+
+/* styles.css or your preferred CSS file */
+.page {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-exit-active {
+  opacity: 0;
+}
