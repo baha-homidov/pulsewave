@@ -2,6 +2,7 @@
 @font-face {
   font-family: "STXihei";
   src: url("/fonts/stxihei.woff") format("woff");
+  font-style: normal;
   /* Add other font properties as needed, like font-weight and font-style */
 }
 
@@ -32,4 +33,18 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:root {
+  --desktop-body-text: 18px;
+  --desktop-heading-text: 32px;
+  --desktop-subheading-text: 24px;
+  --desktop-input-field: 18px;
+
+  --english-text-font: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  --card-border-radius: 40px;
+  --card-background-color: #a0d2d7;
+  --card-padding: 20px;
+  --card-title-color: #175973;
 }

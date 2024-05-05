@@ -1,32 +1,123 @@
 /* index page layout */
 .mainViewComponent {
   min-height: 100vh;
-  padding: 30px;
+
   display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  --bottom-element-height: min(320px, 30%);
+  --flex-gap: 20px;
 }
 
 .content {
-  width: max(70vw, 750px);
-  max-width: 1000px;
-
+  padding: 20px;
+  padding-left: 0px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: var(--flex-gap);
+  grid-template-rows: 1fr;
+  width: min(100vw, 1950px);
   /* box-shadow: 0 20px 50px 0 .174bbb38; */
 
-  display: flex;
-  border: 1px solid red;
+  justify-content: space-around;
+
+  /* border: 1px solid red; */
 }
 
 .leftContainer {
-  border: 1px solid yellow;
+  background-color: var(--error-color);
+  min-width: 470px;
+
+  grid-row: 1/2;
+  grid-column: 1/2;
   display: flex;
-  gap: 40px;
+  gap: var(--flex-gap);
+}
+
+.leftContainer > .left {
+  display: flex;
+  align-items: center;
+}
+
+.leftContainer .logo {
+  background-color: var(--blue);
+  font-size: var(--desktop-body-text);
+  font-family: var(--english-text-font);
+
+  padding: 150px 7px 150px 7px;
+  font-weight: 600;
+  background-color: #254054;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid green;
+  writing-mode: vertical-rl;
+}
+.leftContainer > .right {
+  flex: 1;
+  display: flex;
+  gap: var(--flex-gap);
   flex-direction: column;
+  align-items: stretch;
+}
+.leftContainer > .right > .bodyGraphic {
+  flex: 1;
+}
+.leftContainer > .right > .diagnosisContainer {
+  height: var(--bottom-element-height);
+
 }
 
 .rightContainer {
-  border: 1px solid blue;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  gap: var(--flex-gap);
+  flex-direction: column;
 }
 
+.rightContainer .top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex: 1;
+  border: 1px solid orange;
+  gap: var(--flex-gap);
+}
+
+.rightContainer .top > div {
+  border: 1px solid red;
+}
+
+.rightContainer .bottom {
+  height: var(--bottom-element-height);
+  border: 1px solid purple;
+}
+.button {
+  font-size: 1.1em;
+
+  color: white;
+  height: 53px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #154cbb;
+  transition: background-color 0.2s ease;
+}
+
+.mainButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.pause {
+  background-color: rgb(227, 227, 0);
+  color: black;
+}
+
+.start {
+  background-color: green;
+}

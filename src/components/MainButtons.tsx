@@ -6,9 +6,14 @@ import Layout from "@/components/Layout";
 
 const MainButtons: React.FC = () => {
   return (
-
-      <div className={styles.mainButtons}>Main Buttons</div>
-
+    <div className={styles.mainButtons}>
+      <button className={`${styles.button} ${styles.pause}`}>
+        暂停
+      </button>
+      <button className={`${styles.button} ${styles.start}`} type="submit">
+        重新开始
+      </button>
+    </div>
   );
 };
 

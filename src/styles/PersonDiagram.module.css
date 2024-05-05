@@ -1,0 +1,16 @@
+.personDiagram {
+  background-color: #254054;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  height: 80%;
+  width: auto;
+}
+
+

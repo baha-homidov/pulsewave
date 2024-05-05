@@ -11,9 +11,11 @@
 .homePageComponent > * {
   width: max(70vw, 750px);
   max-width: 1000px;
+  border: 1px solid red;
 }
 
 .content {
+  background-color: red;
   box-shadow: 0 20px 50px 0 #174bbb38;
   margin: 0 auto 80px;
   border-radius: 4px;
