@@ -11,6 +11,8 @@ import MainButtons from "@/components/MainButtons";
 import DiagnosisCard from "@/components/DiagnonsisCard";
 import Imbalance from "@/components/Imbalance";
 import PulseQuality from "@/components/PulseQuality";
+import YingYangBalance from "@/components/YingYangBalance";
+import HearRateGraph from "@/components/HeartRateGraph";
 
 const MainView: React.FC = () => {
   return (
@@ -49,12 +51,16 @@ const MainView: React.FC = () => {
                 <Imbalance
                   type="肝气郁结"
                   info="肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。"
-                  fullInfo="肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。"
+                  fullInfo="肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针灸、草药和压力管理缓解。肝经气血不畅，导致腹部不适和烦躁不安；通过针"
                 />
               </div>
-              <div></div>
+              <div>
+                <YingYangBalance ying={30} yang={70} summary="不平衡" />
+              </div>
             </div>
-            <div className={styles.bottom}></div>
+            <div className={styles.bottom}>
+              <HearRateGraph />
+            </div>
           </div>
         </div>
       </div>

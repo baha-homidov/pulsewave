@@ -1,0 +1,58 @@
+.YingYangBalance {
+  background-color: var(--card-background-color);
+  height: 100%;
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px #17597361;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.img {
+  width: 53px;
+  height: auto;
+}
+
+.title {
+  color: var(--card-title-color);
+  font-size: var(--desktop-heading-text);
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.infoContainer {
+  font-size: var(--desktop-body-text);
+  display: flex;
+  gap: 8px;
+}
+
+.balanceContainer {
+  height: 50px;
+  border-radius: 60px;
+  display: flex;
+}
+
+.white {
+  border-radius: 50px 0px 0px 50px;
+
+  background-color: white;
+}
+
+.black {
+  border-radius: 0px 50px 50px 0px;
+
+  background-color: black;
+}

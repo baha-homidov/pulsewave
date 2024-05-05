@@ -62,7 +62,7 @@
 }
 
 .imbalance .hideButton {
-  padding: 8px;
+  padding: 7px;
   align-self: flex-end;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .imbalance .hideIcon {
-  width: 20px;
+  width: 10px;
 
   height: auto;
 }

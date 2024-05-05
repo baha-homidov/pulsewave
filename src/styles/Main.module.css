@@ -67,7 +67,6 @@
 }
 .leftContainer > .right > .diagnosisContainer {
   height: var(--bottom-element-height);
-
 }
 
 .rightContainer {
@@ -83,17 +82,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   flex: 1;
-  border: 1px solid orange;
   gap: var(--flex-gap);
 }
 
-.rightContainer .top > div {
-  border: 1px solid red;
-}
 
 .rightContainer .bottom {
   height: var(--bottom-element-height);
-  border: 1px solid purple;
+
 }
 .button {
   font-size: 1.1em;
