@@ -38,7 +38,7 @@ const MainView: React.FC = () => {
           <div className={styles.rightContainer}>
             <div className={styles.top}>
               <div>
-                <HearRate current="71" highest="97" lowest="52" />
+                <HearRate current="23" highest="97" lowest="52" />
               </div>
               <div>
                 <PulseQuality
@@ -55,7 +55,7 @@ const MainView: React.FC = () => {
                 />
               </div>
               <div>
-                <YingYangBalance ying={30} yang={70} summary="不平衡" />
+                <YingYangBalance ying={70} yang={70} summary="不平衡" />
               </div>
             </div>
             <div className={styles.bottom}>
